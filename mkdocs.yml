@@ -1,0 +1,20 @@
+site_name: Tool Lending CLI
+
+theme:
+  name: material
+
+nav:
+  - Inicio: index.md
+  - Getting Started: getting-started.md
+  - Guía:
+      - Comandos: user-guide/commands.md
+      - Persistencia: user-guide/persistence.md
+  - Arquitectura: architecture.md
+  - Referencia: reference.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
