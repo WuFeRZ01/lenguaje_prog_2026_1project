@@ -61,8 +61,9 @@ Ejemplos:
 
   cd "C:\Users\Samuel Zapata Rico\Desktop\EveryFolders\lenguaje_prog_2026_1project"
 
-python -m radon cc src -a
+
   python -m radon cc src -a
+  
   python -m mkdocs serve
 
   python -m pytest
@@ -74,6 +75,10 @@ python -m radon cc src -a
   python main.py loan --member-id 1 --tool-id 1
 
   python main.py list-loans
+
+  python main.py return-loan --loan-id 1
+
+  python main.py loan --member-id 1 --tool-id 1
 
   src/tool_lending
 
@@ -90,3 +95,19 @@ main.py → CLI
 Refactoricé los modelos separándolos por entidad.
 
 Implementé validaciones en los modelos usando dataclasses.
+
+python -m radon cc src -a
+
+python main.py list-loans
+
+.github/workflows/tests.yml
+
+Aquí se automatiza la validación del proyecto incluyendo pruebas y complejidad.
+
+
+https://WuFeRZ01.github.io/lenguaje_prog_2026_1project/
+
+Aquí no es un error, es una validación de negocio. El sistema evita que un usuario tenga préstamos duplicados activos.
+
+
+El sistema no solo hace CRUD, también aplica reglas de negocio para mantener consistencia de datos.
